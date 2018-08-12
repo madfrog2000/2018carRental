@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<header>
+		<div class="logo-nav-container">
+			<div class="logo">
+				<img src="images/pure-new-zealand-logo.png" alt="pureNZ">
+				<!-- <div class="bars"><i class="fas fa-bars"></i></div> -->
+			</div>
+		</div>
+	</header>
+	<div class="phone-wrap">
+		<div class="phone-wrap-text">
+			<i class="fas fa-phone"></i>
+			NZ Freephone 0800 92 92 00	
+		</div>
+	</div>
+	<div class="content">
+
+		<!--Make sure the form has the autocomplete function switched off:-->
+		<form autocomplete="off" action="/action_page.php" method="post" class="pure-form pure-form-aligned">
+			<div class="autocomplete">
+				<p>Pickup Location</p>
+				<input id="locationPickup" type="text" name="locationPickup" placeholder="Cities">
+			</div>
+			<div class="form-wrap">
+				<div class="form-wrap-item">
+					<p>Pick up Date</p>
+					<input id="pickupDate" type="date" name="pickupDate">
+				</div>
+				<div class="form-wrap-item">
+					<p>Pick up time</p>
+					<input  value="12:00am" type="text" name="pickupTime" class="datepairExample pickupTime">
+				</div>
+			</div>
+			<div class="autocomplete">
+				<p>Drop off Location</p>
+				<input id="locationDropoff" type="text" name="locationDropoff" placeholder="Cities">
+			</div>
+			<div class="form-wrap">
+				<div class="form-wrap-item">
+					<p>Drop off Date</p>
+					<input id="dropOffDate" type="date" name="dropOffDate">
+				</div>
+				<div class="form-wrap-item">
+					<p>Drop off time</p>
+					<input  value="12:00am" type="text" name="pickupTime" class="datepairExample dropoffTime">
+				</div>
+			</div>
+			<div class="form-wrap">
+				<div class="form-wrap-item">
+					<p>Number of people</p>
+					<select name="people" id="people">
+						<option value=""></option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+				</div>
+				<div class="form-wrap-item">
+					<p>Distance (km)</p>
+					<input type="text" name="distance" id="distance" value="100" />
+				</div>
+			</div>
+			<div class="pure-controls">
+			</div>	
+		</form>
+	</div>
+	<div class="carOptions">
+		<h3>Select a car below</h3>
+		<div class="carOptions-cars" data-border="false" data-price="109" data-fuel="3.7"><img src="images/Scooter.png" alt="Scooter"></div>
+		<div class="carOptions-cars" data-border="false" data-price="129" data-fuel="8.5"><img src="images/smallcar.png" alt="smallCar"></div>
+		<div class="carOptions-cars" data-border="false" data-price="144" data-fuel="9.7"><img src="images/11-hyundai-accent.png" alt="Medium Car"></div>
+		<div class="carOptions-cars" data-border="false" data-price="200" data-fuel="17"><img src="images/5963afdcf072463cfa019f67.png" alt="Caravan"></div>
+	</div>
+	<div class="total"><h2>Total Cost:<span class='value'></span></h2>
+		<h2>Fuel consumpion:<span class='valueFuel'></span></h2>
+		<input name="submit" id="submit" type="submit" value="Submit" class="pure-button pure-button-primary" /></div>
+		<div class="vehiclesWrapper">
+			<div class="vehicles">
+				<h1>Scooter</h1>
+				<img src="images/Scooter.png" alt="Scooter">
+			</div>
+			<div class="vehicles-odd">
+				<ul>
+					<li>Suzuki Verde, Vespa GTS250ie or similar</li>
+					<li>1-2 people</li>
+					<li>3.7L</li>
+					<li>Mobile Charger</li>
+					<li>Mobile Charger</li>
+				</ul>  
+			</div>
+			<div class="vehicles">
+				<h1>Small Car</h1>
+				<img src="images/smallcar.png" alt="SmallCar">
+			</div>
+			<div class="vehicles-odd">
+				<ul>
+					<li>Suzuki Verde, Vespa GTS250ie or similar</li>
+					<li>1-2 people</li>
+					<li>3.7L</li>
+					<li>Mobile Charger</li>
+					<li>Mobile Charger</li>
+				</ul>  
+			</div>
+			<div class="vehicles">
+				<h1>Medium Car</h1>
+				<img src="images/11-hyundai-accent.png" alt="Medium Car">
+			</div>
+			<div class="vehicles-odd">
+				<ul>
+					<li>Suzuki Verde, Vespa GTS250ie or similar</li>
+					<li>1-5 people</li>
+					<li>3.7L</li>
+					<li>Mobile Charger</li>
+					<li>Mobile Charger</li>
+				</ul>  
+			</div>
+			<div class="vehicles">
+				<h1>Caravan</h1>
+				<img src="images/5963afdcf072463cfa019f67.png" alt="Caravan">
+			</div>
+			<div class="vehicles-odd">
+				<ul>
+					<li>Suzuki Verde, Vespa GTS250ie or similar</li>
+					<li>2-6 people</li>
+					<li>3.7L</li>
+					<li>Mobile Charger</li>
+					<li>Mobile Charger</li>
+				</ul>  
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="moment.js"></script>
+		<script src="jquery.timepicker.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+	</html>

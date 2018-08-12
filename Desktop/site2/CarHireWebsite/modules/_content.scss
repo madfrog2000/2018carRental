@@ -1,0 +1,71 @@
+/*All devices and mobile phone*/
+.content{
+	min-height: 24em;
+	height: 44vh;
+	background-color: $color3;
+	display: flex;
+	justify-content: space-around;
+	// flex-wrap:wrap;
+	// padding-right:20px;
+	p{
+		padding-top: 5px;
+		color: $color2;
+	}
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1;
+}
+form{
+	background-color:$color3; 
+	padding: 10px 30px 10px 10px;
+	height:23em!important;
+}
+.form-wrap{
+	display: flex;
+	justify-content: space-between;
+	&-item{
+		flex:0 0 45%;
+	}
+}
+
+#pickupDate{
+	padding: 7px;
+}
+.message-error{
+	outline:none;
+	border: 2px red solid;
+}
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+}
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+	.content{
+		height: 50vh;
+		padding-right: 20em;
+		background-image: url(images/NEWZEALAND-4459.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center; 
+	}
+	form{
+		margin-top: 5%;
+		height:36vh;
+	}
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+	.content{
+		padding-right: 40em;
+	}
+}

@@ -1,0 +1,66 @@
+/*All devices and mobile phone*/
+.vehiclesWrapper{
+	display: flex;
+	flex-wrap:wrap;
+}
+.vehicles{
+	width:100%;
+	height:30vh;
+	background-color: $color2;
+	text-align: center;
+	img{
+		height:20vh;
+	}
+	&-odd{
+		width:100%;
+		height:30vh;
+		background-color: $color3;
+		ul{
+			padding-top: 5em;
+			margin-left: 5em;
+			padding-left:1em;
+		}
+	}
+}
+
+
+
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+
+}
+
+
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+	.vehicles{
+		flex:0 0 50%;
+		&-odd{
+			flex:0 0 50%;
+		}
+	}
+	.vehicles-odd:nth-child(2){
+		background-color: $color2;
+	}
+	.vehicles:nth-child(3){
+		background-color: $color3;
+	}
+	.vehicles-odd:nth-child(6){
+		background-color: $color2;
+	}
+	.vehicles:nth-child(7){
+		background-color: $color3;
+	}
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+}

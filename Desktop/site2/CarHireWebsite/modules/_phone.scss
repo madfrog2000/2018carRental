@@ -1,0 +1,50 @@
+/*All devices and mobile phone*/
+
+.phone-wrap{
+	height: 4em;
+	background-color: $color1;
+	position:relative;
+	display:block;
+	text-align: center;	
+
+	&-text{
+		color: $color2;
+		font-size: 1.5em;
+		width: 100%;
+		position:absolute;
+		top:12.5%; 
+	}
+	i{	
+		padding: 8px;
+		border:3px white solid;
+		border-radius: 50%;
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+	}
+}
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+}
+
+
+
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+}
+

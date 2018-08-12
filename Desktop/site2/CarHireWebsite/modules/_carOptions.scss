@@ -1,0 +1,71 @@
+/*All devices and mobile phone*/
+.carOptions{
+	height:40vh;
+	background-color: $color1;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	align-items: center;
+	&-cars{
+		flex-basis:50%;
+
+		img{
+			width: 75%;
+			margin-left: 12.5%;
+		}
+	}
+	h3{
+		width:100%;
+		text-align: center;
+		color:$color2;
+		padding-top: 5px;
+	}
+}
+
+.carOptions-cars {
+	transition: 1s ease all;
+}
+
+.optionBorder {
+	border: 2px white solid;
+}
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+	h3{
+		font-size: 3vw;
+	}
+	.carOptions-cars{
+		img{
+			width: 60%;
+			margin-left: 12.5%;
+		}
+	}
+}
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+	.carOptions{
+		&-cars{
+			flex-basis:25%;
+			img{
+				width: 75%;
+				margin-left: 12.5%;
+			}
+		}
+		h3{
+			font-size: 3vw;
+		}
+	}
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+	
+}
